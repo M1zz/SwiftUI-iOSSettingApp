@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58439BA72856273F0087B332 /* SampleLeeoSettingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58439BA62856273F0087B332 /* SampleLeeoSettingAppApp.swift */; };
+		58439BA92856273F0087B332 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58439BA82856273F0087B332 /* ContentView.swift */; };
+		58439BAB285627410087B332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58439BAA285627410087B332 /* Assets.xcassets */; };
+		58439BAE285627410087B332 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58439BAD285627410087B332 /* Preview Assets.xcassets */; };
+		58439BB8285627410087B332 /* SampleLeeoSettingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58439BB7285627410087B332 /* SampleLeeoSettingAppTests.swift */; };
+		58439BC2285627410087B332 /* SampleLeeoSettingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58439BC1285627410087B332 /* SampleLeeoSettingAppUITests.swift */; };
+		58439BC4285627410087B332 /* SampleLeeoSettingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58439BC3285627410087B332 /* SampleLeeoSettingAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58439BB4285627410087B332 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58439B9B2856273F0087B332 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58439BA22856273F0087B332;
+			remoteInfo = SampleLeeoSettingApp;
+		};
+		58439BBE285627410087B332 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58439B9B2856273F0087B332 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58439BA22856273F0087B332;
+			remoteInfo = SampleLeeoSettingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		58439BA32856273F0087B332 /* SampleLeeoSettingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleLeeoSettingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58439BA62856273F0087B332 /* SampleLeeoSettingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLeeoSettingAppApp.swift; sourceTree = "<group>"; };
+		58439BA82856273F0087B332 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		58439BAA285627410087B332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58439BAD285627410087B332 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58439BB3285627410087B332 /* SampleLeeoSettingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleLeeoSettingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58439BB7285627410087B332 /* SampleLeeoSettingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLeeoSettingAppTests.swift; sourceTree = "<group>"; };
+		58439BBD285627410087B332 /* SampleLeeoSettingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleLeeoSettingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58439BC1285627410087B332 /* SampleLeeoSettingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLeeoSettingAppUITests.swift; sourceTree = "<group>"; };
+		58439BC3285627410087B332 /* SampleLeeoSettingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLeeoSettingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58439BA02856273F0087B332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58439BB0285627410087B332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58439BBA285627410087B332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58439B9A2856273F0087B332 = {
+			isa = PBXGroup;
+			children = (
+				58439BA52856273F0087B332 /* SampleLeeoSettingApp */,
+				58439BB6285627410087B332 /* SampleLeeoSettingAppTests */,
+				58439BC0285627410087B332 /* SampleLeeoSettingAppUITests */,
+				58439BA42856273F0087B332 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58439BA42856273F0087B332 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58439BA32856273F0087B332 /* SampleLeeoSettingApp.app */,
+				58439BB3285627410087B332 /* SampleLeeoSettingAppTests.xctest */,
+				58439BBD285627410087B332 /* SampleLeeoSettingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58439BA52856273F0087B332 /* SampleLeeoSettingApp */ = {
+			isa = PBXGroup;
+			children = (
+				58439BA62856273F0087B332 /* SampleLeeoSettingAppApp.swift */,
+				58439BA82856273F0087B332 /* ContentView.swift */,
+				58439BAA285627410087B332 /* Assets.xcassets */,
+				58439BAC285627410087B332 /* Preview Content */,
+			);
+			path = SampleLeeoSettingApp;
+			sourceTree = "<group>";
+		};
+		58439BAC285627410087B332 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				58439BAD285627410087B332 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		58439BB6285627410087B332 /* SampleLeeoSettingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				58439BB7285627410087B332 /* SampleLeeoSettingAppTests.swift */,
+			);
+			path = SampleLeeoSettingAppTests;
+			sourceTree = "<group>";
+		};
+		58439BC0285627410087B332 /* SampleLeeoSettingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				58439BC1285627410087B332 /* SampleLeeoSettingAppUITests.swift */,
+				58439BC3285627410087B332 /* SampleLeeoSettingAppUITestsLaunchTests.swift */,
+			);
+			path = SampleLeeoSettingAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58439BA22856273F0087B332 /* SampleLeeoSettingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58439BC7285627410087B332 /* Build configuration list for PBXNativeTarget "SampleLeeoSettingApp" */;
+			buildPhases = (
+				58439B9F2856273F0087B332 /* Sources */,
+				58439BA02856273F0087B332 /* Frameworks */,
+				58439BA12856273F0087B332 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleLeeoSettingApp;
+			productName = SampleLeeoSettingApp;
+			productReference = 58439BA32856273F0087B332 /* SampleLeeoSettingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58439BB2285627410087B332 /* SampleLeeoSettingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58439BCA285627410087B332 /* Build configuration list for PBXNativeTarget "SampleLeeoSettingAppTests" */;
+			buildPhases = (
+				58439BAF285627410087B332 /* Sources */,
+				58439BB0285627410087B332 /* Frameworks */,
+				58439BB1285627410087B332 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58439BB5285627410087B332 /* PBXTargetDependency */,
+			);
+			name = SampleLeeoSettingAppTests;
+			productName = SampleLeeoSettingAppTests;
+			productReference = 58439BB3285627410087B332 /* SampleLeeoSettingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		58439BBC285627410087B332 /* SampleLeeoSettingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58439BCD285627410087B332 /* Build configuration list for PBXNativeTarget "SampleLeeoSettingAppUITests" */;
+			buildPhases = (
+				58439BB9285627410087B332 /* Sources */,
+				58439BBA285627410087B332 /* Frameworks */,
+				58439BBB285627410087B332 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58439BBF285627410087B332 /* PBXTargetDependency */,
+			);
+			name = SampleLeeoSettingAppUITests;
+			productName = SampleLeeoSettingAppUITests;
+			productReference = 58439BBD285627410087B332 /* SampleLeeoSettingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58439B9B2856273F0087B332 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					58439BA22856273F0087B332 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					58439BB2285627410087B332 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 58439BA22856273F0087B332;
+					};
+					58439BBC285627410087B332 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 58439BA22856273F0087B332;
+					};
+				};
+			};
+			buildConfigurationList = 58439B9E2856273F0087B332 /* Build configuration list for PBXProject "SampleLeeoSettingApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58439B9A2856273F0087B332;
+			productRefGroup = 58439BA42856273F0087B332 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58439BA22856273F0087B332 /* SampleLeeoSettingApp */,
+				58439BB2285627410087B332 /* SampleLeeoSettingAppTests */,
+				58439BBC285627410087B332 /* SampleLeeoSettingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58439BA12856273F0087B332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58439BAE285627410087B332 /* Preview Assets.xcassets in Resources */,
+				58439BAB285627410087B332 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58439BB1285627410087B332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58439BBB285627410087B332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58439B9F2856273F0087B332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58439BA92856273F0087B332 /* ContentView.swift in Sources */,
+				58439BA72856273F0087B332 /* SampleLeeoSettingAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58439BAF285627410087B332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58439BB8285627410087B332 /* SampleLeeoSettingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58439BB9285627410087B332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58439BC4285627410087B332 /* SampleLeeoSettingAppUITestsLaunchTests.swift in Sources */,
+				58439BC2285627410087B332 /* SampleLeeoSettingAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58439BB5285627410087B332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58439BA22856273F0087B332 /* SampleLeeoSettingApp */;
+			targetProxy = 58439BB4285627410087B332 /* PBXContainerItemProxy */;
+		};
+		58439BBF285627410087B332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58439BA22856273F0087B332 /* SampleLeeoSettingApp */;
+			targetProxy = 58439BBE285627410087B332 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		58439BC5285627410087B332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58439BC6285627410087B332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58439BC8285627410087B332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SampleLeeoSettingApp/Preview Content\"";
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.SampleLeeoSettingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58439BC9285627410087B332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SampleLeeoSettingApp/Preview Content\"";
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.SampleLeeoSettingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		58439BCB285627410087B332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.SampleLeeoSettingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleLeeoSettingApp.app/SampleLeeoSettingApp";
+			};
+			name = Debug;
+		};
+		58439BCC285627410087B332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.SampleLeeoSettingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleLeeoSettingApp.app/SampleLeeoSettingApp";
+			};
+			name = Release;
+		};
+		58439BCE285627410087B332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.SampleLeeoSettingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SampleLeeoSettingApp;
+			};
+			name = Debug;
+		};
+		58439BCF285627410087B332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.SampleLeeoSettingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SampleLeeoSettingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58439B9E2856273F0087B332 /* Build configuration list for PBXProject "SampleLeeoSettingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58439BC5285627410087B332 /* Debug */,
+				58439BC6285627410087B332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58439BC7285627410087B332 /* Build configuration list for PBXNativeTarget "SampleLeeoSettingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58439BC8285627410087B332 /* Debug */,
+				58439BC9285627410087B332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58439BCA285627410087B332 /* Build configuration list for PBXNativeTarget "SampleLeeoSettingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58439BCB285627410087B332 /* Debug */,
+				58439BCC285627410087B332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58439BCD285627410087B332 /* Build configuration list for PBXNativeTarget "SampleLeeoSettingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58439BCE285627410087B332 /* Debug */,
+				58439BCF285627410087B332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58439B9B2856273F0087B332 /* Project object */;
+}
