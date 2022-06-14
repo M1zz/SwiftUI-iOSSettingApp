@@ -24,33 +24,26 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    airPlainToggleCell()
+                    toggleCell(imageName: "airplane",
+                               iconColor: .orange,
+                               cellTitle: "에어플레인 모드",
+                               isAirplainModeOn: $isAirplainModeOn)
                     
-                    wifiTextCell()
-                    
-                    HStack {
-                        Image(systemName: "bolt")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 20, height: 20)
-                            .padding(.all, 4)
-                            .background(.blue)
-                            .foregroundColor(.white)
-                            .cornerRadius(6)
-                            
-                        NavigationLink {
-                            Text("Bluetooth 화면")
-                        } label: {
-                            HStack {
-                                Text("Bluetooth")
-                                Spacer()
-                                Text("켬")
-                                    .foregroundColor(.gray)
-                            }
-                        }
+                    navigationLinkCell(imageName: "wifi",
+                              iconColor: .blue,
+                              cellTitle: "Wi-Fi",
+                    subTitle: "SK_WiFiGIGAD9BC_5G") {
+                        Text("셀룰러 화면2")
                     }
                     
-                    plainCell(imageName: "antenna.radiowaves.left.and.right",
+                    navigationLinkCell(imageName: "bolt",
+                                iconColor: .blue,
+                                cellTitle: "Bluetooth",
+                                subTitle: "켬") {
+                        Text("Bluetooth 화면")
+                    }
+                    
+                    navigationLinkCell(imageName: "antenna.radiowaves.left.and.right",
                               iconColor: .green,
                               cellTitle: "셀룰러") {
                         Text("셀룰러 화면2")
@@ -58,7 +51,7 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    plainCell(imageName: "hourglass",
+                    navigationLinkCell(imageName: "hourglass",
                               iconColor: .indigo,
                               cellTitle: "스크린 타임") {
                         Text("스크린 타임 화면")
@@ -66,19 +59,19 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    plainCell(imageName: "gear",
+                    navigationLinkCell(imageName: "gear",
                               iconColor: .gray,
                               cellTitle: "일반") {
                         Text("일반 화면")
                     }
 
-                    plainCell(imageName: "figure.wave.circle",
+                    navigationLinkCell(imageName: "figure.wave.circle",
                               iconColor: .blue,
                               cellTitle: "손쉬운 사용") {
                         Text("손쉬운 사용 화면")
                     }
                     
-                    plainCell(imageName: "hand.raised.fill",
+                    navigationLinkCell(imageName: "hand.raised.fill",
                               iconColor: .blue,
                               cellTitle: "개인 정보 보호") {
                         Text("개인 정보 보호 화면")
@@ -86,7 +79,7 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    plainCell(imageName: "key.fill",
+                    navigationLinkCell(imageName: "key.fill",
                               iconColor: .gray,
                               cellTitle: "암호") {
                         Text("암호 화면")
@@ -122,79 +115,49 @@ struct ContentView: View {
     }
     
     @ViewBuilder
-    private func airPlainToggleCell() -> some View {
+    private func iconImage(imageName: String, iconColor: Color) -> some View {
+        Image(systemName: imageName)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 20, height: 20)
+            .padding(.all, 4)
+            .background(iconColor)
+            .foregroundColor(.white)
+            .cornerRadius(6)
+    }
+    
+    @ViewBuilder
+    private func toggleCell(imageName: String, iconColor: Color, cellTitle: String, isAirplainModeOn: Binding<Bool>) -> some View {
         HStack {
-            Image(systemName: "airplane")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 20, height: 20)
-                .padding(.all, 4)
-                .background(.orange)
-                .foregroundColor(.white)
-                .cornerRadius(6)
+            iconImage(imageName: imageName, iconColor: iconColor)
                 
-            Toggle("에어플레인 모드",
+            Toggle(cellTitle,
                    isOn: $isAirplainModeOn)
         }
     }
     
     @ViewBuilder
-    private func wifiTextCell() -> some View {
+    private func navigationLinkCell<V: View>(imageName: String, iconColor: Color,
+                                      cellTitle: String, subTitle: String? = nil,
+                                      destination: @escaping () -> V) -> some View {
         HStack {
-            Image(systemName: "wifi")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 20, height: 20)
-                .padding(.all, 4)
-                .background(.blue)
-                .foregroundColor(.white)
-                .cornerRadius(6)
+            iconImage(imageName: imageName, iconColor: iconColor)
                 
-            NavigationLink {
-                Text("Wi-Fi 화면")
-            } label: {
-                HStack {
-                    Text("Wi-Fi")
-                    Spacer()
-                    Text("SK_WiFiGIGAD9BC_5G")
-                        .foregroundColor(.gray)
+            if let subTitle = subTitle {
+                NavigationLink {
+                    destination()
+                } label: {
+                    HStack {
+                        Text(cellTitle)
+                        Spacer()
+                        Text(subTitle)
+                            .foregroundColor(.gray)
+                    }
                 }
-            }
-        }
-    }
-    
-    @ViewBuilder
-    private func cellularPlainCell() -> some View {
-        HStack {
-            Image(systemName: "antenna.radiowaves.left.and.right")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 20, height: 20)
-                .padding(.all, 4)
-                .background(.green)
-                .foregroundColor(.white)
-                .cornerRadius(6)
-                
-            NavigationLink("셀룰러") {
-                Text("셀룰러 화면")
-            }
-        }
-    }
-    
-    @ViewBuilder
-    private func plainCell<V: View>(imageName: String, iconColor: Color ,cellTitle: String, destination: @escaping () -> V) -> some View {
-        HStack {
-            Image(systemName: imageName)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 20, height: 20)
-                .padding(.all, 4)
-                .background(iconColor)
-                .foregroundColor(.white)
-                .cornerRadius(6)
-                
-            NavigationLink(cellTitle) {
-                destination()//Text("News 화면")
+            } else {
+                NavigationLink(cellTitle) {
+                    destination()
+                }
             }
         }
     }
