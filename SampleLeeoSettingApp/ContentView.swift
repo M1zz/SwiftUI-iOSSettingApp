@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isAirplainModeOn: Bool = false
+    
     var body: some View {
         
         NavigationView {
@@ -50,9 +53,8 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .cornerRadius(6)
                             
-                        NavigationLink("에어플레인모드") {
-                            Text("Safari 화면")
-                        }
+                        Toggle("에어플레인 모드",
+                               isOn: $isAirplainModeOn)
                     }
                     
                     HStack {
@@ -65,13 +67,20 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .cornerRadius(6)
                             
-                        NavigationLink("Wi-Fi") {
-                            Text("News 화면")
+                        NavigationLink {
+                            Text("Wi-Fi 화면")
+                        } label: {
+                            HStack {
+                                Text("Wi-Fi")
+                                Spacer()
+                                Text("SK_WiFiGIGAD9BC_5G")
+                                    .foregroundColor(.gray)
+                            }
                         }
                     }
                     
                     HStack {
-                        Image(systemName: "safari")
+                        Image(systemName: "bolt")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 20, height: 20)
@@ -80,8 +89,15 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .cornerRadius(6)
                             
-                        NavigationLink("Bluetooth") {
-                            Text("News 화면")
+                        NavigationLink {
+                            Text("Bluetooth 화면")
+                        } label: {
+                            HStack {
+                                Text("Bluetooth")
+                                Spacer()
+                                Text("켬")
+                                    .foregroundColor(.gray)
+                            }
                         }
                     }
                     HStack {
